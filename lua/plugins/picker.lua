@@ -1,0 +1,45 @@
+return {
+  -- {
+  --   "folke/snacks.nvim",
+  --   --stylua: ignore
+  --   keys = {
+  --     { "<leader>sf", function() Snacks.picker.files() end, desc = "Picker: Search files" },
+  --     { "<leader>sb", function() Snacks.picker.buffers() end, desc = "Picker: Search resume" },
+  --     { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Picker: Search current word" },
+  --     { "<leader>sg", function() Snacks.picker.grep() end, desc = "Picker: Grep" },
+  --     { "<leader>s/", function() Snacks.picker.lines() end, desc = "Picker: Grep current buffer" },
+  --     { "<leader><leader>", function() Snacks.picker.pickers() end, desc = "Picker: Search for pickers" },
+  --
+  --     { "<leader>sd", function() Snacks.picker.diagnostics() end, desc = "Picker: Search in diagnostics" },
+  --     { "<leader>sD", function() Snacks.picker.diagnostics_buffer() end, desc = "Picker: Search in diagnostics for current buffer" },
+  --
+  --     { "<leader>sr", function() Snacks.picker.resume() end, desc = "Picker: Search resume" },
+  --
+  --     { "<leader>sh", function() Snacks.picker.help() end, desc = "Picker: Search Help" },
+  --     { "<leader>sk", function() Snacks.picker.keymaps() end, desc = "Picker: Search Keymaps" },
+  --     { "<leader>sn", function() Snacks.picker.config() end, desc = "Picker: Search Keymaps" },
+  --     { "<leader>s:", function() Snacks.picker.command_history() end, desc = "Picker: Search command history" },
+  --     { "<leader>s\"", function() Snacks.picker.command_history() end, desc = "Picker: Search registers" },
+  --     -- LSP
+  --     { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
+  --     { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
+  --     { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
+  --     { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
+  --     { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
+  --     { "gai", function() Snacks.picker.lsp_incoming_calls() end, desc = "C[a]lls Incoming" },
+  --     { "gao", function() Snacks.picker.lsp_outgoing_calls() end, desc = "C[a]lls Outgoing" },
+  --     { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
+  --     { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+  --   },
+  -- },
+}
+
+-- { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
+-- { "<leader>fB", function() Snacks.picker.buffers({ hidden = true, nofile = true }) end, desc = "Buffers (all)" },
+-- { "<leader>fc", LazyVim.pick.config_files(), desc = "Find Config File" },
+-- { "<leader>ff", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
+-- { "<leader>fF", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+-- { "<leader>fg", function() Snacks.picker.git_files() end, desc = "Find Files (git-files)" },
+-- { "<leader>fr", LazyVim.pick("oldfiles"), desc = "Recent" },
+-- { "<leader>fR", function() Snacks.picker.recent({ filter = { cwd = true }}) end, desc = "Recent (cwd)" },
+-- { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
