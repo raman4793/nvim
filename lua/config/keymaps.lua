@@ -28,3 +28,17 @@ vim.keymap.set("n", "<M-l>", require("smart-splits").resize_right)
 
 vim.keymap.set("v", "<S-j>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
 vim.keymap.set("v", "<S-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
+
+vim.keymap.del({ "n", "i", "s" }, "<C-f>")
+vim.keymap.set({ "n", "i", "s" }, "<C-d>", function()
+  if not require("noice.lsp").scroll(4) then
+    return "<C-d>"
+  end
+end, { silent = true, expr = true })
+
+vim.keymap.del({ "n", "i", "s" }, "<C-b>")
+vim.keymap.set({ "n", "i", "s" }, "<C-u>", function()
+  if not require("noice.lsp").scroll(-4) then
+    return "<C-u>"
+  end
+end, { silent = true, expr = true })
